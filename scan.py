@@ -51,7 +51,15 @@ Examples:
 
     parser.add_argument(
         "target",
-        help="Target host to scan (IPv4 address or FQDN, e.g. 127.0.0.1 or example.com)",
+        nargs="?",
+        default="127.0.0.1",
+        help="Target host to scan (IPv4 address or FQDN, e.g. 127.0.0.1 or example.com). Default: 127.0.0.1",
+    )
+
+    parser.add_argument(
+        "--web",
+        action="store_true",
+        help="Launch the interactive browser Web Dashboard GUI on http://localhost:5000",
     )
 
     port_group = parser.add_mutually_exclusive_group()
@@ -136,6 +144,11 @@ def main():
     """Main CLI execution flow."""
     parser = build_parser()
     args = parser.parse_args()
+
+    if args.web:
+        from web import start_server
+        start_server(port=5000, open_browser=True)
+        return
 
     reporter = ConsoleReporter(
         color_enabled=not args.no_color,
