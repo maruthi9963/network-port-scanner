@@ -1,0 +1,6 @@
+# Python TCP Port Scanner
+# This tool uses 100% Python Standard Library (no mandatory external pip packages required).
+# Requires Python >= 3.8
+
+# Optional enhancements:
+# colorama>=0.4.6  # For legacy Windows Command Prompt ANSI color support (Windows 10/11 supports ANSI natively)

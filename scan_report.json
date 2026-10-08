@@ -1,0 +1,177 @@
+{
+  "target": {
+    "host": "scanme.nmap.org",
+    "ip": "45.33.32.156"
+  },
+  "metrics": {
+    "total_ports": 20,
+    "open_count": 3,
+    "closed_count": 0,
+    "filtered_count": 17,
+    "duration_seconds": 1.04,
+    "start_time": 1791433411.5171356,
+    "end_time": 1791433412.5604777
+  },
+  "results": [
+    {
+      "port": 21,
+      "protocol": "tcp",
+      "state": "OPEN",
+      "service": "FTP (File Transfer Protocol)",
+      "latency_ms": 87.89,
+      "banner": null
+    },
+    {
+      "port": 22,
+      "protocol": "tcp",
+      "state": "OPEN",
+      "service": "SSH (Secure Shell)",
+      "latency_ms": 317.8,
+      "banner": "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13"
+    },
+    {
+      "port": 23,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "Telnet",
+      "latency_ms": 1005.97,
+      "banner": null
+    },
+    {
+      "port": 25,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "SMTP (Simple Mail Transfer)",
+      "latency_ms": 1006.47,
+      "banner": null
+    },
+    {
+      "port": 53,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "DNS (Domain Name System)",
+      "latency_ms": 1005.99,
+      "banner": null
+    },
+    {
+      "port": 80,
+      "protocol": "tcp",
+      "state": "OPEN",
+      "service": "HTTP (World Wide Web)",
+      "latency_ms": 296.16,
+      "banner": "HTTP/1.1 200 OK (Server: Apache/2.4.7 (Ubuntu))"
+    },
+    {
+      "port": 110,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "POP3 (Post Office Protocol v3)",
+      "latency_ms": 1005.6,
+      "banner": null
+    },
+    {
+      "port": 111,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "RPCBind / Sun RPC",
+      "latency_ms": 1005.53,
+      "banner": null
+    },
+    {
+      "port": 135,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "MS RPC / Endpoint Mapper",
+      "latency_ms": 1005.64,
+      "banner": null
+    },
+    {
+      "port": 139,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "NetBIOS Session Service",
+      "latency_ms": 1005.58,
+      "banner": null
+    },
+    {
+      "port": 143,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "IMAP (Internet Message Access Protocol)",
+      "latency_ms": 1004.39,
+      "banner": null
+    },
+    {
+      "port": 443,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "HTTPS (HTTP Secure / TLS)",
+      "latency_ms": 1004.76,
+      "banner": null
+    },
+    {
+      "port": 445,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "SMB / Microsoft-DS (Active Directory)",
+      "latency_ms": 1004.55,
+      "banner": null
+    },
+    {
+      "port": 993,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "IMAPS (IMAP over SSL)",
+      "latency_ms": 1004.59,
+      "banner": null
+    },
+    {
+      "port": 995,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "POP3S (POP3 over SSL)",
+      "latency_ms": 1003.73,
+      "banner": null
+    },
+    {
+      "port": 1723,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "PPTP VPN",
+      "latency_ms": 1004.38,
+      "banner": null
+    },
+    {
+      "port": 3306,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "MySQL Database",
+      "latency_ms": 1034.91,
+      "banner": null
+    },
+    {
+      "port": 3389,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "RDP (Remote Desktop Protocol)",
+      "latency_ms": 1007.01,
+      "banner": null
+    },
+    {
+      "port": 5900,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "VNC (Virtual Network Computing)",
+      "latency_ms": 1006.3,
+      "banner": null
+    },
+    {
+      "port": 8080,
+      "protocol": "tcp",
+      "state": "FILTERED",
+      "service": "HTTP Proxy / Apache Tomcat / Spring Boot",
+      "latency_ms": 1005.7,
+      "banner": null
+    }
+  ]
+}
